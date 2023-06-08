@@ -5,8 +5,8 @@ from airflow.operators.empty import EmptyOperator
 
 with DAG(
     dag_id="dags_conn_test",
-    schedule=None
-    start_Date=pendulum.datetime(2023, 3, 1, tz="Aisa/Seoul")
+    schedule=None,
+    start_date=pendulum.datetime(2023, 3, 1, tz="Aisa/Seoul"),
     catchup=False
 ) as dag:
 
