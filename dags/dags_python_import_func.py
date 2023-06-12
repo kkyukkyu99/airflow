@@ -10,5 +10,4 @@ with DAG(dag_id="dags_python_import_func",
          catchup=False) as dags:
     
     task_get_sftp = PythonOperator(task_id="task_get_sftp",
-                                   python_callable="task_get_sftp",
                                    python_callable=get_sftp)
